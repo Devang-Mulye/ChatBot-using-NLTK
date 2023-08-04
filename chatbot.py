@@ -1,6 +1,6 @@
 from nltk.chat.util import Chat, reflections
 
-pairs = [
+responses = [
     ['my name is (.*)', ['Hello! %1']],
     ['(hi|hello|hey|holla|hola)', ['Hey there!', 'Hi there!', 'Hey!']],
     ['(.*) your name ?', ['My name is Alex, I am the counterpart of Alexa']],
@@ -22,8 +22,27 @@ pairs = [
     ['who is your favorite author?', ['I don\'t have personal favorites, but I appreciate the works of authors like Shakespeare, Jane Austen, and Isaac Asimov.']],
     ['tell me about the weather', ['I am sorry, but as an AI, I don\'t have access to real-time data. You can check the weather using a weather app or website.']],
     ['what are your hobbies?', ['Since I am an AI, I don\'t have hobbies, but I enjoy assisting users and learning from interactions.']],
-    ['tell me a riddle', ['What has keys but can\'t open locks? A piano!', 'I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I? An echo!']]
+    ['tell me a riddle', ['What has keys but can\'t open locks? A piano!', 'I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I? An echo!']],
+    ['what is the national flower of Japan?', ['The national flower of Japan is the cherry blossom (sakura).']],
+    ['tell me a random fact', ['A day on Venus is longer than a year on Venus. It takes Venus approximately 225 Earth days to orbit the sun, but it takes about 243 Earth days for Venus to complete one rotation on its axis.']],
+    ['what is your favorite color?', ['As an AI, I don\'t have personal preferences, but blue and green are popular colors among humans.']],
+    ['tell me a tongue twister', ['She sells seashells by the seashore.', 'How can a clam cram in a clean cream can?']],
+    ['what is the square root of 10000?', ['The square root of 10000 is 100.']],
+    ['tell me about a famous scientist', ['Albert Einstein was a renowned physicist known for developing the theory of relativity, one of the two pillars of modern physics.']],
+    ['who painted the Mona Lisa?', ['The Mona Lisa was painted by Leonardo da Vinci.']],
+    ['what is the speed of light?', ['The speed of light in a vacuum is approximately 299,792,458 meters per second (or about 186,282 miles per second).']],
+    ['tell me a fact about space', ['In space, there is a floating water bubble that is 100 times the size of Earth\'s oceans.']],
+    ['what is the largest planet in our solar system?', ['Jupiter is the largest planet in our solar system.']],
+    ['tell me about a famous inventor', ['Thomas Edison was a prolific American inventor, best known for inventing the practical incandescent light bulb.']],
+    ['who wrote "Romeo and Juliet"?', ['"Romeo and Juliet" was written by William Shakespeare.']],
+    ['what is the currency of Japan?', ['The currency of Japan is the Japanese yen.']],
+    ['tell me a science fiction movie recommendation', ['"Blade Runner 2049" is a visually stunning and thought-provoking sci-fi movie that you might enjoy.']],
+    ['what is the boiling point of water?', ['The boiling point of water at sea level is 100 degrees Celsius or 212 degrees Fahrenheit.']],
+    ['tell me about the Great Wall of China', ['The Great Wall of China is an ancient wall and fortification system built to protect China from invasions. It is one of the most impressive architectural feats in history.']],
+    ['who is the CEO of Tesla?', ['As of my last update, Elon Musk is the CEO of Tesla.']],
+    ['tell me a fact about the human body', ['The human brain generates enough electricity to power a small light bulb.']],
+    ['what is the smallest planet in our solar system?', ['Mercury is the smallest planet in our solar system.']]
 ]
 
-chat = Chat(pairs, reflections)
+chat = Chat(responses, reflections)
 chat.converse()
